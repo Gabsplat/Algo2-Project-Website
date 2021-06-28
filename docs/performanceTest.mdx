@@ -1,0 +1,57 @@
+---
+sidebar_label: "Test de performance"
+sidebar_position: 2
+---
+
+# Test de performance 
+
+El siguiente test fue realizado con un módulo de Python llamado ***cProfile***. Indica la cantidad de llamadas por función/método, el tiempo que tarda cada uno y el tiempo total con sus llamadas a otras funciones.
+
+## Performance
+
+**39938316 function calls (39036677 primitive calls) in 19.516 seconds**
+
+|  ncalls |  tottime |  percall |  cumtime |  percall filename:lineno(function) |
+|---------|----------|----------|----------|------------------------------------|
+|    1    |   0.000  |   0.000  |  19.516  |19.516 {built-in method builtins.exec}|
+|1|    0.000    |0.000|   19.516|   19.516 string:1(module)|
+|1  |  1.555    |1.555|   19.516|   19.516 personal_library.py:54(create)|
+|1376307    |1.195|    0.000|   10.609|    0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:55(__init__)|
+|1376309    |1.946    |0.000    |9.277    |0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:26(__init__)|
+|1376309 |   1.591|    0.000|    7.331|    0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:32(listcomp)|
+|619277   | 0.433    |0.000    |6.632    |0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:81(concat)|
+|4319399   | 4.039   | 0.000|    5.740|    0.000 D:\Python\lib\copy.py:132(deepcopy)|
+|112183    |0.920    |0.000    |4.458   | 0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\main_structures.py:30(TInsert)|
+|562106    |2.244   | 0.000|    2.244|    0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\main_structures.py:86||(searchCharacter)|
+|2179253   | 0.696 |   0.000 |   1.252|    0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:59(__getitem__)|
+|3179598/2277959   | 0.693   | 0.000 |   1.069  |  0.000 {built-in method builtins.len}|
+|764498   | 0.478   | 0.000 |   0.921  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\hash_structure.py:106||(searchHash)|
+|8638798 |   0.895  |  0.000 |   0.895   | 0.000 {method 'get' of 'dict' objects}|
+|2891604 |   0.737|    0.000  |  0.737  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:36(__getitem__)|
+|901639   | 0.252 |   0.000   | 0.635  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:68(__len__)|
+|4319399  |  0.406 |   0.000 |   0.406  |  0.000 {built-in method builtins.id}|
+|4319399  |  0.399  |  0.000  |  0.399  |  0.000 D:\Python\lib\copy.py:190(_deepcopy_atomic)|
+|926773  |  0.254 |   0.000  |  0.345 |   0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\hash_structure.py:91(hash)|
+|1   | 0.268  |  0.268 |   0.268   | 0.268 {built-in method _pickle.dump}|
+|71126  |  0.185  |  0.000 |   0.185  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\linkedlist.py:18(add)|
+|162198   | 0.094  |  0.000  |  0.177  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\hash_structure.py:115||(specialSearchHash)|
+|901639  |  0.124  |  0.000 |   0.124 |   0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:51(__len__)|
+|926773 |   0.091 |   0.000 |   0.091 |   0.000 {built-in method builtins.ord}|
+|13262 |   0.011  |  0.000 |   0.011  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\main_structures.py:123(listAdd)|
+|12  |  0.004  |  0.000  |  0.005  |  0.000 {method 'readlines' of '_io._IOBase' objects}|
+|13  |  0.003  |  0.000  |  0.003 |  0.000 {built-in method io.open}|
+|1  | 0.000 |   0.000  |  0.001  |  0.001 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\hash_structure.py:12||(createWordsTable)|
+|112  |  0.000  |  0.000 |   0.001  |  0.000 D:\Python\lib\codecs.py:319(decode)|
+|2  |  0.001  |  0.000  |   0.001  |    0.000 {built-in method builtins.print}|
+|112 |   0.001  |  0.000  |  0.001 |  0.000 {built-in method _codecs.utf_8_decode}|
+|12  |  0.000 |    0.000   | 0.000  |  0.000 personal_library.py:28(isTextFile)|
+|77  |  0.000  |  0.000  |  0.000  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\hash_structure.py:95(insertHash)|
+|1  |  0.000  |  0.000  |  0.000  |  0.000 {built-in method nt.listdir}|
+|1  |  0.000  |  0.000  |  0.000  |  0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\hash_structure.py:4||(createImportantCharHash)|
+|77  |  0.000  |  0.000  |  0.000 |   0.000 D:\Universidad\2do a�o\Algoritmo y Estructura de Datos 2\Proyecto\proyecto-grupo7\algo1.py:41(__setitem__)|
+|12 |  0.000  |  0.000  |  0.000  |  0.000 D:\Python\lib\codecs.py:309(__init__)|
+|6  |  0.000  |  0.000  |  0.000  |  0.000 D:\Python\lib\copyreg.py:96(_slotnames)|
+|12  |  0.000 |   0.000 |   0.000  |  0.000 D:\Python\lib\codecs.py:260(__init__)|
+|6  |  0.000   | 0.000  |  0.000 |   0.000 {built-in method builtins.hasattr}|
+|6  |  0.000  |  0.000  |  0.000 |   0.000 {method 'get' of 'mappingproxy' objects}|
+|1  |  0.000  |  0.000 |  0.000 |   0.000 {method 'disable' of '_lsprof.Profiler' objects}|

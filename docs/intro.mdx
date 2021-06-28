@@ -1,0 +1,62 @@
+---
+sidebar_position: 2
+slug: /
+---
+# Introducción 
+![alt text](./assets/imgs/Logo.png)
+![Python Lang Badge](https://img.shields.io/badge/-Python-f2ef3a?logo=python&logoColor=blue&style=for-the-badge) ![Project Participants](https://img.shields.io/badge/INTEGRANTES-GABRIEL%20CARRILLO%20y%20GABRIEL%20P%C3%89REZ%20DIEZ-blue?style=for-the-badge) 
+
+
+#### **Proyecto final de la materia 'Algoritmo y Estructuras de Datos 2' de la Universidad Nacional de Cuyo.** 
+El proyecto consiste la utilización de diversas estructuras de datos vistas durante el cursado, con el fin de crear un programa eficiente de busqueda de palabras en una biblioteca de archivos
+
+## Instalación
+
+Para empezar a utilizar el programa (desde **[Github](https://github.com)**):
+
+```shell
+$ git clone https://github.com/LCC-AyED2-2021/proyecto-grupo7.git
+$ cd proyecto-grupo7
+```
+
+
+O descargalo como archivo ZIP desde **[acá](https://github.com/LCC-AyED2-2021/proyecto-grupo7/archive/refs/heads/main.zip)**
+
+## ¿Cómo usar la app?
+
+### Creación de una biblioteca
+
+Para poder guardar los datos de una biblioteca en el programa, primero empieza con el siguiente comando:
+
+```shell
+$ C:/proyecto-grupo7: python personal_library.py -create 'path'
+```
+
+Donde **path** puede ser:
+- **Relativo** a la carpeta del programa: `biblioteca`
+- **Absoluto**: `C:/path/a/biblioteca`
+
+:::danger CUIDADO
+Si ya has creado una biblioteca anteriormente, utilizar este comando **reescribe todos los datos** anteriormente guardados.
+:::
+
+### Busqueda en la biblioteca
+
+Una vez creada la biblioteca, para buscar una palabra en ella se usa el siguiente comando:
+
+```shell
+$ C:/proyecto-grupo7: python personal_library.py -search 'word'
+```
+
+<details>
+<summary>EJEMPLO DE OUTPUT:</summary>
+
+```
+Deep Learning--based Text Classification_ A Comprehensive Review.txt: 61 
+Bidirectional LSTM-CRF Models for Sequence Tagging.txt: 32 
+Skin Reading_ Encoding Text in a 6-Channel Haptic Display.txt: 21
+Machine learning_ Trends, perspectives, and prospects.txt: 4
+```
+
+</details>
+
